@@ -60,10 +60,10 @@ public abstract class LazyFragment extends Fragment {
         super.setUserVisibleHint(isVisibleToUser);
         Log.i("lazy_load", "LazyFragment setUserVisibleHint "+isVisibleToUser);
 
-        if (isVisibleToUser && !hasLoaded) {
-            if (hasCreated) {
+        if (isVisibleToUser && !hasLoaded) {    //如果当前Fragment向用户展示且没有加载过，进行下一步判断
+            if (hasCreated) {   //如果onCreateView已经被创建，此时进行加载
                 initWrapper();
-            } else {
+            } else {        //如果Fragment没有创建，那么设置标记，在onCreateView中加载
                 needInit = true;
             }
         }
