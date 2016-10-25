@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Lazy Fragment Demo</string>
+
+    <string name="tab_1">TAB_1</string>
+    <string name="tab_2">TAB_2</string>
+    <string name="tab_3">TAB_3</string>
+    <string name="tab_4">TAB_4</string>
+
+    <string name="first_fragment">First Fragment</string>
+    <string name="second_fragment">Second Fragment</string>
+    <string name="third_fragment">Third Fragment</string>
+    <string name="fourth_fragment">Fourth Fragment</string>
+
+    <string name="initialized">已加载！</string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:titleTextColor="@android:color/white"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/holo_blue_light"
+        android:orientation="horizontal">
+
+        <lic.swifter.demo.lazy.widget.FragmentTab
+            android:id="@+id/fragment_tab_first"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:selected="true"
+            app:text="@string/tab_1" />
+
+        <lic.swifter.demo.lazy.widget.FragmentTab
+            android:id="@+id/fragment_tab_second"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:text="@string/tab_2" />
+
+        <lic.swifter.demo.lazy.widget.FragmentTab
+            android:id="@+id/fragment_tab_third"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:text="@string/tab_3" />
+
+        <lic.swifter.demo.lazy.widget.FragmentTab
+            android:id="@+id/fragment_tab_fourth"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:text="@string/tab_4" />
+
+    </LinearLayout>
+</LinearLayout>
