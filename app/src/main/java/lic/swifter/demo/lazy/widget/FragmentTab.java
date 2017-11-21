@@ -13,7 +13,7 @@ import lic.swifter.demo.lazy.R;
 
 /**
  * 首页底部的组合控件
- * Created by Li on 2016/10/12.
+ * Created by Lee-swifter on 2016/10/12.
  */
 public class FragmentTab extends LinearLayout {
 

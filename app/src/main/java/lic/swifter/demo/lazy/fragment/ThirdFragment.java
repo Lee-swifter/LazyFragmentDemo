@@ -14,7 +14,7 @@ package lic.swifter.demo.lazy.fragment;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Created by cheng on 2016/10/25.
+ * Created by Lee-swifter on 2016/10/25.
  */
 
 import android.util.Log;
@@ -29,7 +29,7 @@ public class ThirdFragment extends LazyFragment {
         TextView title = $(content, R.id.fragment_main_title);
         TextView desc = $(content, R.id.fragment_main_desc);
 
-        title.setText(R.string.first_fragment);
+        title.setText(R.string.third_fragment);
         desc.setText(R.string.initialized);
 
         Log.i("lazy_load", "ThirdFragment initialized.");
