@@ -3,6 +3,7 @@ package lic.swifter.demo.lazy;
 import android.os.Bundle;
 import androidx.annotation.CheckResult;
 import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -110,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
             super(fm);
         }
 
+        @NonNull
         @Override
         public Fragment getItem(int position) {
             return fragmentList.get(position);
